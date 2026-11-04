@@ -1,107 +1,158 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_TP10+.css">
     <title>Cocktail</title>
 </head>
-<body> 
-    <img src="./mojito_picture.jpg" alt="Image d'un mojito sur un pose-verre en bois">
+
+<body>
     <header>
+        <img src="icone_jeu.pdf.png" alt="icone du site">
         <h1>Le Mojito</h1>
+
         <nav>
-            <h3>
             <ul>
                 <li><a href="#description">Description</a></li>
                 <li><a href="#ingrédients">Ingrédients</a></li>
                 <li><a href="#recette">Recette</a></li>
             </ul>
-            </h3>
         </nav>
     </header>
-    <main>
-        <div id="conteneur">
-        <section id="description">
-            <h3>Description</h3>
-            <p>Le mojito est un cocktail emblématique de Cuba. 
-                Il est connu pour son profil frais, acidulé, légèrement sucré et très aromatique, avec une sensation désaltérante particulièrement marquée.</p>
-            <p>
-                Un mojito bien réalisé présente plusieurs niveaux d'arômes :
+
+    <main id="main_container">
+
+        <div class="presentation">
+
+            <img src="./mojito_picture.jpg" alt="Image d'un mojito sur un pose-verre en bois" id="imgCocktail">
+
+            <section id="description">
+                <h3>Description</h3>
+
+                <p>
+                    Le mojito est un cocktail emblématique de Cuba.
+                    Il est connu pour son profil frais, acidulé,
+                    légèrement sucré et très aromatique, avec une
+                    sensation désaltérante particulièrement marquée.
+                </p>
+
+                <p>
+                    Un mojito bien réalisé présente plusieurs niveaux
+                    d'arômes :
+                </p>
+
                 <ul>
-                    <li>Au nez : la menthe fraîche domine généralement, accompagnée par les agrumes du citron vert et les notes caractéristiques du rhum.</li>
-                    <li>À l'attaque : on retrouve immédiatement la fraîcheur, l'acidité du citron vert et les bulles.</li>
-                    <li>Au milieu de bouche : le sucre arrondit l'acidité tandis que le rhum apporte chaleur et profondeur.</li>
-                    <li>En finale : la menthe reste particulièrement présente, avec une sensation fraîche et légèrement persistante.</li>
+                    <li>Au nez : la menthe fraîche domine généralement,
+                    accompagnée par les agrumes du citron vert.</li>
+
+                    <li>À l'attaque : on retrouve immédiatement
+                    la fraîcheur, l'acidité du citron vert et les bulles.</li>
+
+                    <li>Au milieu de bouche : le sucre arrondit
+                    l'acidité tandis que le rhum apporte chaleur
+                    et profondeur.</li>
+
+                    <li>En finale : la menthe reste particulièrement
+                    présente.</li>
                 </ul>
-                L'objectif est généralement d'obtenir un équilibre entre acidité, douceur, fraîcheur, alcool et dilution.
-            </p>
-            <p>
-                <section>
-                    Quand le boire ?
-                    Le mojito est particulièrement associé aux journées chaudes, aux terrasses, aux soirées estivales et aux apéritifs. 
-                    Sa fraîcheur et son caractère pétillant en font un cocktail souvent consommé en début de soirée.
-                    Il accompagne facilement des aliments aux saveurs fraîches ou épicées, notamment certaines cuisines latino-américaines, caribéennes ou asiatiques.
-                </section>
-                <section>
-                    En résumé
-                    Le mojito est un cocktail cubain construit autour de six éléments fondamentaux : rhum blanc, citron vert, menthe, sucre, eau gazeuse et glace. 
-                    Sa particularité réside dans le contraste entre l'acidité du citron vert, la douceur du sucre, 
-                    la fraîcheur aromatique de la menthe, la chaleur du rhum et la vivacité des bulles.
-                    Lorsqu'il est bien équilibré, il donne une impression simultanée de fraîcheur, vivacité, légèreté et complexité aromatique, 
-                    ce qui explique en grande partie son immense popularité internationale.
-                </section>
-            </p>
-        </section>
-                <div class="colonnes">
-                    <section id="ingrédients">
-                        <h4>⚖️ L'équilibre d'un bon mojito</h4>
 
-                        Un mojito réussi ne doit pas être simplement 
-                        « sucré et alcoolisé ». </br>
+                <h4>Quand le boire ?</h4>
 
-                        Il repose sur un équilibre entre plusieurs sensations :</br>
+                <p>
+                    Le mojito est particulièrement associé aux journées
+                    chaudes, aux terrasses, aux soirées estivales et
+                    aux apéritifs.
+                </p>
 
-                        <div class="liste">
-                            Acidité ↔ douceur </br>
-                            Le citron vert apporte l'acidité tandis que le sucre l'équilibre.</br>
+                <h4>En résumé</h4>
 
-                            Alcool ↔ dilution</br>
-                            Le rhum apporte de la puissance, 
-                            tandis que la glace et l'eau gazeuse rendent le cocktail 
-                            plus accessible.</br>
+                <p>
+                    Le mojito est un cocktail cubain construit autour
+                    de six éléments fondamentaux : rhum blanc,
+                    citron vert, menthe, sucre, eau gazeuse et glace.
+                </p>
+            </section>
 
-                            Menthe ↔ agrumes</br>
-                            La menthe apporte la fraîcheur et les agrumes apportent </br>
-                            la vivacité.</br>
+        </div>
 
-                            Puissance ↔ légèreté</br>
-                            Le rhum donne une certaine profondeur, alors que l'eau gazeuse et la glace donnent au mojito son caractère léger et désaltérant.</br>
-                        </div>
-                    </section>
+        <div class="colonnes">
 
-                    <section id="recette">
-                        <h3>Recette</h3>
+            <section id="ingrédients">
+                <h3>⚖️ L'équilibre d'un bon mojito</h3>
 
-                        Préparation traditionnelle
+                <p>
+                    Un mojito réussi ne doit pas être simplement
+                    « sucré et alcoolisé ».
+                </p>
 
-                        <div class="liste">
-                            La préparation repose moins sur une technique complexe que sur la manière de traiter les ingrédients.
+                <p>
+                    Il repose sur un équilibre entre plusieurs sensations :
+                </p>
 
-                            On commence généralement par placer le citron vert et le sucre dans le verre.
-                            La menthe est ensuite ajoutée et légèrement pressée ou travaillée afin de libérer ses huiles aromatiques.
+                <div class="liste">
+                    <p><strong>Acidité ↔ douceur</strong><br>
+                    Le citron vert apporte l'acidité tandis que
+                    le sucre l'équilibre.</p>
 
-                            On ajoute ensuite le rhum, puis beaucoup de glace.
-                            Le mélange est généralement remué afin d'homogénéiser les ingrédients et de commencer la dilution.
+                    <p><strong>Alcool ↔ dilution</strong><br>
+                    Le rhum apporte de la puissance, tandis que
+                    la glace et l'eau gazeuse rendent le cocktail
+                    plus accessible.</p>
 
-                            Enfin, on complète avec de l'eau gazeuse et on mélange délicatement.
-                        </div>
-                    </section>
+                    <p><strong>Menthe ↔ agrumes</strong><br>
+                    La menthe apporte la fraîcheur et les agrumes
+                    apportent la vivacité.</p>
+
+                    <p><strong>Puissance ↔ légèreté</strong><br>
+                    Le rhum donne de la profondeur, alors que
+                    l'eau gazeuse et la glace donnent au mojito
+                    son caractère désaltérant.</p>
                 </div>
-        </main>
-    </div>
+            </section>
+
+            <section id="recette">
+                <h3>Recette</h3>
+
+                <h4>Préparation traditionnelle</h4>
+
+                <div class="liste">
+                    <p>
+                        La préparation repose moins sur une technique
+                        complexe que sur la manière de traiter
+                        les ingrédients.
+                    </p>
+
+                    <p>
+                        On commence généralement par placer le citron
+                        vert et le sucre dans le verre.
+                    </p>
+
+                    <p>
+                        La menthe est ensuite ajoutée et légèrement
+                        pressée afin de libérer ses huiles aromatiques.
+                    </p>
+
+                    <p>
+                        On ajoute ensuite le rhum, puis beaucoup
+                        de glace.
+                    </p>
+
+                    <p>
+                        Enfin, on complète avec de l'eau gazeuse
+                        et on mélange délicatement.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
     <footer>
-        <p>merci d'avoir écouter jusqu'au bout ^^ !</p>
+        <p>Merci d'avoir écouté jusqu'au bout ^^ !</p>
     </footer>
+
 </body>
 </html>

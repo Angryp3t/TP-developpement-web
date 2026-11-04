@@ -10,32 +10,62 @@ body{
     border-radius: 25px;
     margin: 10%;
 }
-ul{
-    list-style: none;
-}
-img{
-    display: block;
-    border: 2px, solid, #eadfc9;
-    border-radius: 50px 15px 50px 50px;
-    float: right;
-    height: 180px;
-    width: 125px;
-}
 
 header{
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    color: azure;
+    img{
+        width: 100px;
+        height: 100px;
+        
+    }
     h1{
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        li{
+            padding: 5%;
+        }
+    }
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
 }
 
 #conteneur {
     display: flex;
     flex-direction: column;
+    flex-wrap:wrap;
 }
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+.presentation img{
+    display: block;
+    width: 45%;
+    height: auto;
+    border: 2px, solid, #eadfc9;
+    border-radius: 50px 15px 50px 50px;
+}
+#description {
+    width: 45%;
+}
+
 .colonnes {
     display: flex;
-    gap: 40px;
     align-items: flex-start;
+    align-items: stretch ;
 }
 #ingrédients,
 #recette {
@@ -44,4 +74,36 @@ header{
 
 footer{
     color: rgb(87, 68, 21);
+    text-align: center;
+    padding: 15px;
+}
+#imgCocktail {
+    width: 45%;
+}
+#imgCocktail img{
+    width: 100%;
+}
+
+@media all and (max-width:768px) {
+    #main_container{
+        width: 80%;
+        padding:5%;
+    }
+    .presentation,#ingrédients ,#recette{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:425px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #main_container .colonnes,.presentation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation,#ingrédients ,#recette{
+        width: 100%;
+    }
 }
