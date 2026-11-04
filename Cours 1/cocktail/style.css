@@ -1,0 +1,19 @@
+
+
+:not(h1){
+    font-family: Lucida Sans Unicode;
+}
+ul{
+    list-style: none;
+}
+
+@font-face{
+    font-family: 'Citadel of Blackrose';
+    src: url('Citadel of Blackrose.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+h1{
+    font-family: Playfair Display;
+}

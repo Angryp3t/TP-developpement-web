@@ -1,0 +1,47 @@
+html{
+    scroll-behavior:  smooth;
+    background-color: #eadfc9;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+body{
+    background-color: white;
+    border: solid, 25px, white;
+    border-radius: 25px;
+    margin: 10%;
+}
+ul{
+    list-style: none;
+}
+img{
+    display: block;
+    border: 2px, solid, #eadfc9;
+    border-radius: 50px 15px 50px 50px;
+    float: right;
+    height: 180px;
+    width: 125px;
+}
+
+header{
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+#conteneur {
+    display: flex;
+    flex-direction: column;
+}
+.colonnes {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+#ingrédients,
+#recette {
+    flex: 1;
+}
+
+footer{
+    color: rgb(87, 68, 21);
+}
