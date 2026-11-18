@@ -6,7 +6,7 @@ html{
 
 body{
     background-color: white;
-    border: solid, 25px, white;
+    border: solid 25px white;
     border-radius: 25px;
     margin: 10%;
 }
@@ -19,7 +19,6 @@ header{
     img{
         width: 100px;
         height: 100px;
-        
     }
     h1{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -30,6 +29,7 @@ header{
         list-style: none;
         align-items: center;
         padding: 0px !important;
+        margin-top: 10px;
         }
     }
 
@@ -53,7 +53,7 @@ main {
     display: block;
     width: 45%;
     height: auto;
-    border: 2px, solid, #eadfc9;
+    border: 2px solid #eadfc9;
     border-radius: 50px 15px 50px 50px;
 }
 #description {
@@ -82,7 +82,7 @@ footer{
     width: 100%;
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:768px) and (min-width:430px) {
     #main_container{
         width: 80%;
         padding:5%;
@@ -92,11 +92,23 @@ footer{
     }
 }
 
-@media all and (max-width:425px) {
+@media all and (max-width:429px) {
     header{
         flex-direction: column;
         align-items: center;
     }
+    main {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #description {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     #main_container .colonnes,.presentation{
         flex-direction: column;
         align-items: center;
