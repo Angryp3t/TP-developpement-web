@@ -36,6 +36,17 @@ header{
 main {
     margin: 20px auto;
     padding: 20px;
+    img{
+        transition:1s;
+    }
+    img:hover{
+        transition: all 1s ease;
+        /*transform: rotate(-15deg) scale(95%) skewY(-3deg) translateX(-10px) translateY(5px);*/
+        transform: perspective(100px) rotate3d(1, 2, 5, 50deg)  ;
+        box-shadow: 16px 19px 87px 20px rgba(0,0,0,0.64);
+        -webkit-box-shadow: 16px 19px 87px 20px rgba(0,0,0,0.64);
+        -moz-box-shadow: 16px 19px 87px 20px rgba(0,0,0,0.64);
+    }
 }
 
 #conteneur {
@@ -55,7 +66,9 @@ main {
     height: auto;
     border: 2px solid #eadfc9;
     border-radius: 50px 15px 50px 50px;
+    transition: transform 1s ease;
 }
+
 #description {
     width: 45%;
 }
@@ -81,6 +94,38 @@ footer{
 #imgCocktail img{
     width: 100%;
 }
+
+form{
+    transition: all 1s;
+    margin: 10%;
+    background-color: blanchedalmond;
+    border-radius: 100px;
+    color:#462e07;
+    label{
+        font-size: x-large;
+        font-style: italic;
+    }
+    #submit {
+        margin-top: 10px;
+    }
+}
+input{
+    border: 2px solid transparent;
+    border-radius: 100rem;
+    background: #fff;
+    color:#462e07;
+    transition: border-color 1s ease, background-color 1s ease, color 1s ease;
+}
+input:focus {
+    border-color: #462e07;
+    outline:none;
+}
+input:not(:focus):invalid{
+    background: #b20a37;
+    border-color: #b20a37;
+    color: #fff;
+}
+
 
 @media all and (max-width:768px) and (min-width:430px) {
     #main_container{
