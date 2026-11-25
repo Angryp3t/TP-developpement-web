@@ -263,15 +263,9 @@ ul{
         }
     }
 }
-.icone {
-    min-width: 45px;
-    text-align: center;
-    font-size: 22px;
-}
 
 
 #part3{
-    padding-top: 10px;
     span{
         background-color: var(--cafenoir);
         color: var(--grullo);
@@ -279,10 +273,17 @@ ul{
     background-color: var(--vanilla);
     conteneur{
         justify-content: center;
-        gap: 20px;
-        padding: 20px;
+    }
+    .type3{
+        background-color: var(--forest-black) ;
     }
 }
+
+
+
+
+
+
 .centre-etoile {
     position: relative;
 }
