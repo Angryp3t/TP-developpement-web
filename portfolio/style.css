@@ -3,6 +3,7 @@ html{
     background-color:#101212;
 }
 :root{
+    /*=== Couleur ===*/
   --spresso-black: #1F1610;
   --cafenoir: #4E351E;
   --Coffee: #6C5234;
@@ -21,6 +22,35 @@ html{
   --soft-black:#29231F;
 }
 
+/*=== Polices de Google : ===*/
+.tienne-regular {
+  font-family: "Tienne", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tienne-bold {
+  font-family: "Tienne", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tienne-black {
+  font-family: "Tienne", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*===== Style de la page entière =====*/
 body {
     margin: 0;
     padding: 0;
@@ -53,11 +83,12 @@ nav{
         background-color: transparent;
     }
     div:hover{
-        transition:transform 0.5s ease;
+        transition:all 0.5s ease;
         transform: scale(1.1);
         border: 2px solid var(--warm-sand);
         background-color: var(--grullo);
         color: var(--spresso-black);
+        cursor: pointer;
     }
 }
 
@@ -65,6 +96,7 @@ nav{
     position: relative;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-family: "Tienne";
     #me{
         display: block;
         margin-left: auto;
@@ -96,22 +128,137 @@ nav{
     }
 }
 main conteneur{
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    box-sizing: border-box;
 }
+.titre{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    span{
+        font-size: 30px;
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 15px;
+    }
+    align-items: center;
+}
+.titre{
+    font-size: 20px;
+    text-align: left;
+    span{
+        font-family: "Merriweather";
+    }
+}
+ul{
+    list-style-type: "✦   ";
+}
+
 #part1{
+    span{
+        background-color: var(--cafenoir);
+        color: var(--grullo);
+    }
+    padding-top: 10px;
     background-color: var(--vanilla);
-    border-top: 5px solid var(--absolute-black);
-    border-bottom: 5px solid var(--absolute-black);
+    border-radius: 30px 30px 0px 0px;
+    .titre{
+        padding-left: 20px;
+        color: var(--spresso-black);
+    }
+    conteneur{
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        section:hover{
+            transform: scale(1.05);
+            transition: transform 0.5s;
+        }
+        section{
+            transition: transform 0.5s ease;
+            padding:15px;
+            color: var(--absolute-black);
+            justify-content: center;
+            background-color: var(--warm-sand);
+            border: 0px solid var(--grullo);
+            border-radius: 40px;
+            border-top:5px solid #3D6B42;
+            .date{
+                transition: all 0.5s ease;
+                background-color: var(--moss);
+                color: var(--spresso-black);
+                font-size: 16px;
+                padding: 5px;
+                border-radius: 25px;
+                display: inline-block;
+                white-space: nowrap;
+            }
+            .date:hover{
+                cursor:default;
+                transform: scale(1.05);
+                background-color: var(--charcoal);
+                color: var(--moss);
+                transition: all 0.5s ease;
+            }
+        }
+        ul{
+            color: var(--cafenoir);
+        }
+    }
 }
 #part2{
-    background-color: var(--grullo);
-    border-top: 5px solid var(--absolute-black);
-    border-bottom: 5px solid var(--absolute-black);
+    span{
+        background-color: var(--deep-forest);
+        border: 3px solid var(--soft-black);
+        color: var(--grullo);
+    }
+    background-color: var(--cafenoir);
+    .titre{
+        color: var(--absolute-black);
+    }
+    conteneur{
+        justify-content: center;
+        gap: 0px;
+        .type1:hover{
+            content: "Ceci est une explication au survol";
+        }
+        .type1{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            padding: 20px;
+            background-color: var(--warm-sand);
+            color: var(--soft-black);
+        }
+        .type2{
+            background-color: var(--soft-black);
+            color: var(--warm-sand);
+        }
+    }
 }
+.icone {
+    min-width: 45px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
 #part3{
-    border-top: 5px solid var(--absolute-black);
-    border-bottom: 5px solid var(--absolute-black);
+    padding-top: 10px;
+    span{
+        background-color: var(--cafenoir);
+        color: var(--grullo);
+    }
+    background-color: var(--vanilla);
+    conteneur{
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
 }
 .centre-etoile {
     position: relative;
@@ -121,12 +268,12 @@ main conteneur{
     content: "✦";
     position: absolute;
 
-    top: 18px;
+    top: -4px;
     left: 50%;
     transform: translate(-50%, -50%);
 
     font-size: 55px;
-    color: var(--spresso-black);
+    color: var(--grullo);
 
     z-index: 5;
     text-shadow: 0 3px 12px #1F161080;
