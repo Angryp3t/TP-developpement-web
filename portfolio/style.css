@@ -299,5 +299,5 @@ ul{
     color: var(--grullo);
 
     z-index: 5;
-    text-shadow: 0 3px 12px #1F161080;
+    text-shadow: 0 3px 12px var(--deep-forest);
 }
