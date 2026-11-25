@@ -235,8 +235,31 @@ ul{
             color: var(--soft-black);
         }
         .type2{
+            padding: 20px;
+            position: relative;
+            gap: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: var(--soft-black);
             color: var(--warm-sand);
+            .exp{
+                .time{
+                    color: var(--moss);
+                    font-size: 24px;
+                }
+                text-align: center;
+                background-color: var(--warm-sand);
+                color:var(--spresso-black);
+                font-size: 18px;
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+                border-radius: 100%;
+            }
+            .info{
+                font-size: 3px;
+            }
         }
     }
 }
