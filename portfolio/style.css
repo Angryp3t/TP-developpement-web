@@ -322,6 +322,8 @@ ul{
     .type3{
         padding: 20px;
         background-color: var(--forest-black) ;
+        display: flex;
+        flex-direction: column;
         #maquette{
             display: flex;
             height: 250px;
@@ -413,4 +415,19 @@ footer{
     color: var(--grullo);
     z-index: 5;
     text-shadow: 0 3px 12px var(--deep-forest);
+}
+
+
+@media screen and (max-width: 930px) {
+    #maquette{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 590px) {
+    main conteneur {
+        grid-template-columns: 1fr;
+    }
+    nav{
+        gap: 10px;
+    }
 }
