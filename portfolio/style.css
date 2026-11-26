@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    background-color:#101212;
+    background-color:var(--spresso-black);
 }
 :root{
     /*=== Couleur ===*/
@@ -74,7 +74,7 @@ nav{
     color: var(--warm-sand);
     font-size: 15px;
     font-family:cursive;
-    div{
+    a{
         transition: all 0.5s ease;
         border: 2px solid var(--spresso-black);
         border-radius: 2em;
@@ -82,7 +82,11 @@ nav{
         text-decoration: none;
         background-color: transparent;
     }
-    div:hover{
+    a:visited{
+        color: var(--warm-sand);
+    }
+    a:link{color: var(--warm-sand);}
+    a:hover{
         transition:all 0.5s ease;
         transform: scale(1.1);
         border: 2px solid var(--warm-sand);
@@ -294,13 +298,15 @@ ul{
         padding: 20px;
         justify-content: center;
         background-color: var(--warm-sand);
-        padding-top: 15%;
+        padding-left: 10%;
     .partie{
-        padding-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        padding-left: 5px;
         display: flex;
         gap: 10px;
         transform: scale(1.10);
-
+        align-items: center;
         .icone{
             background-color: var(--cafenoir);
             padding: 5px;
@@ -345,13 +351,50 @@ ul{
                     height: 100%;
                     object-fit: contain;
                 }
+                border-radius: 30px;
             }
             }
             }
     }
 }
 
-
+footer{
+    #cont{
+        padding-top: 20px;
+        font-size: 25px;
+        background-color: var(--cafenoir);
+        color: var(--absolute-black);
+        border-radius: 0px 0px 30px 30px;
+        text-align: center;
+    }
+    :link{
+        padding-left: 10px;
+        color: var(--grullo);
+        text-decoration: none;
+    }
+    #Contact{
+        font-size: 16px;
+        color: var(--wax-palm);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        :hover{
+            background-color: var(--grullo);
+            color: var(--charcoal);
+            :link{
+                color: var(--soft-black);
+            }
+            transform: scale(1.05);
+        }
+    }
+    #copy{
+        text-align: center;
+        font-family: "Merriweather";
+    }
+    background-color: var(--spresso-black);
+    color: var(--warm-sand);
+}
 
 
 
@@ -363,14 +406,11 @@ ul{
 .centre-etoile::before {
     content: "✦";
     position: absolute;
-
     top: -4px;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-size: 55px;
     color: var(--grullo);
-
     z-index: 5;
     text-shadow: 0 3px 12px var(--deep-forest);
 }
