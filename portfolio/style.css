@@ -287,11 +287,45 @@ ul{
     conteneur{
         justify-content: center;
     }
-    .type3{
-        background-color: var(--forest-black) ;
-    }
     .titre{
         color: var(--moss);
+    }
+    .type4{
+        padding: 20px;
+        justify-content: center;
+        background-color: var(--warm-sand);
+        padding-top: 15%;
+    .partie{
+        padding-left: 10px;
+        display: flex;
+        gap: 10px;
+        transform: scale(1.10);
+
+        .icone{
+            background-color: var(--cafenoir);
+            padding: 5px;
+            border-radius: 25%;
+            img{
+                filter: invert(85%) sepia(15%) saturate(500%)
+                hue-rotate(20deg) brightness(105%);
+                width: 20px;
+                height: auto;
+            }
+        }
+    }}
+    .type3{
+        padding: 20px;
+        background-color: var(--forest-black) ;
+        #maquette{
+            display: flex;
+            .maquette{
+                flex: 0.5;
+                img{
+                    display: block;
+                    height:400px;
+                }
+            }
+        }
     }
 }
 
